@@ -304,7 +304,7 @@ async def requestHandler(bot:Update, msg:Message):
                         [
                             InlineKeyboardButton(
                                 "⏳Request Status⏳",
-                                url = f"https://t.me/c/{channelIDPro}/{requestMSG.message_id}"
+                                url = f"https://t.me/c/{channellinkPro}/{requestMSG.message_id}"
                             )
                         ]
                     ]
