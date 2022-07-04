@@ -292,7 +292,7 @@ async def requestHandler(bot:Update, msg:Message):
                 )
             )
 
-            replyText = f"<b>👋 Hello {mentionUser} !\n\n📍 Dᴇᴀʀ Sɪʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} ʜᴀs ʙᴇᴇɴ sᴜʙᴍɪᴛᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs Sᴜᴄᴄᴇssғᴜʟʟʏ ✅\n\n🚀 Tʀᴜsᴛ Mᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Wɪʟʟ Bᴇ Uᴘʟᴏᴀᴅᴇᴅ sᴏᴏɴ...🔥\n📌 Pʟᴇᴀsᴇ Nᴏᴛᴇ ᴛʜᴀᴛ Aᴅᴍɪɴs ᴍɪɢʜᴛ ʙᴇ ʙᴜsʏ Sᴏ, ᴛʜɪs ᴍᴀʏ ᴛᴀᴋᴇ. sᴏᴍᴇ ᴛɪᴍᴇ ⏰\n\nYᴏᴜ Cᴀɴ Sᴇᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Sᴛᴀᴛᴜs Bᴇʟᴏᴡ 👇</b>"
+            replyText = f"<b>👋 Hello {mentionUser} !\n\n📍 Dᴇᴀʀ Sɪʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} ʜᴀs ʙᴇᴇɴ sᴜʙᴍɪᴛᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs Sᴜᴄᴄᴇssғᴜʟʟʏ ✅\n\nYᴏᴜ Cᴀɴ Sᴇᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Sᴛᴀᴛᴜs Bᴇʟᴏᴡ 👇</b>"
 
             # Sending message for user in group
             await msg.reply_text(
