@@ -298,7 +298,7 @@ async def requestHandler(bot:Update, msg:Message):
             await msg.reply_text(
                 replyText,
                 parse_mode = "html",
-                reply_to_message_id = msg.mess
+                reply_to_message_id = msg.msg.message_id,
                 reply_markup = InlineKeyboardMarkup(
                     [
                         [
