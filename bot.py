@@ -292,7 +292,7 @@ async def requestHandler(bot:Update, msg:Message):
                 )
             )
 
-            replyText = f"<b>👋 Hello {mentionUser} !\n\n📍 Dᴇᴀʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} ʜᴀs ʙᴇᴇɴ sᴜʙᴍɪᴛᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs Sᴜᴄᴄᴇssғᴜʟʟʏ 🚀\n\nYᴏᴜ Cᴀɴ Sᴇᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Sᴛᴀᴛᴜs Bᴇʟᴏᴡ 👇\n🔮⇶ @movie_request_status</b>"
+            replyText = f"<b>👋 Hello {mentionUser} !\n\n📍 Dᴇᴀʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} ʜᴀs ʙᴇᴇɴ sᴜʙᴍɪᴛᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs Sᴜᴄᴄᴇssғᴜʟʟʏ 🚀\n\nYᴏᴜ Cᴀɴ Sᴇᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Sᴛᴀᴛᴜs Bᴇʟᴏᴡ 👇\n🔮⇶ @movie_request_status </b>"
 
             # Sending message for user in group
             await msg.reply_text(
@@ -337,7 +337,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
                     elif data == "completed":
                         return await callback_query.answer(
-                            "This request Is Completed 🥳...\nTᴏ Cʜᴇᴄᴋᴏᴜᴛ Tʏᴘᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴡɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ or check admin reply**  😎",
+                            "This request Is Completed 🥳...\nTᴏ Cʜᴇᴄᴋᴏᴜᴛ Tʏᴘᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ ɪɴ ɢʀᴏᴜᴘ ᴡɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ ᴄʜᴇᴄᴋ ᴀᴅᴍɪɴ ʀᴇᴘʟʏ 😎",
                             show_alert = True
                         )
                     user = await bot.get_chat_member(int(channelID), callback_query.from_user.id)
@@ -353,7 +353,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                             button = InlineKeyboardButton("😟 Request Rejected 🚫", "rejected")
                         elif data == "done":
                             result = "COMPLETED"
-                            groupResult = "**ɪs Cᴏᴍᴘʟᴇᴛᴇᴅ Tʏᴘᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ ʜᴇʀᴇ ɪɴ ɢʀᴏᴜᴘ ᴡɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ or check admin reply** 😎 & ᴛʜᴀɴᴋ ᴛᴏ ᴀᴅᴍɪɴ 🥳"
+                            groupResult = "**ɪs Cᴏᴍᴘʟᴇᴛᴇᴅ Tʏᴘᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ ʜᴇʀᴇ ɪɴ ɢʀᴏᴜᴘ ᴡɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ ᴄʜᴇᴄᴋ ᴀᴅᴍɪɴ ʀᴇᴘʟʏ 😎 & ᴛʜᴀɴᴋ ᴛᴏ ᴀᴅᴍɪɴ 🥳"
                             button = InlineKeyboardButton("Request Completed ✅", "completed")
                         elif data == "unavailable":
                             result = "UNAVAILABLE"
@@ -390,7 +390,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
 
                         # Result of request sent to group
-                        replyText = f"<b>Dᴇᴀʀ {mentionUser} 🌹\n**Yᴏᴜʀ ʀᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} {groupResult}\n👍 Tʜᴀɴᴋs ғᴏʀ ʀᴇǫᴜᴇsᴛɪɴɢ! ❤</b>"
+                        replyText = f"<b>Dᴇᴀʀ {mentionUser} 🌹\n Yᴏᴜʀ ʀᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} {groupResult}\n👍 Tʜᴀɴᴋs ғᴏʀ ʀᴇǫᴜᴇsᴛɪɴɢ! ❤</b>"
                         await bot.send_message(
                             int(groupID),
                             replyText,
