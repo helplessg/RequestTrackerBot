@@ -292,7 +292,7 @@ async def requestHandler(bot:Update, msg:Message):
                 )
             )
 
-            replyText = f"<b>👋 Hello {mentionUser} !\n\n📍 Dᴇᴀʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} ʜᴀs ʙᴇᴇɴ sᴜʙᴍɪᴛᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs Sᴜᴄᴄᴇssғᴜʟʟʏ 🚀\n\nYᴏᴜ Cᴀɴ Sᴇᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Sᴛᴀᴛᴜs Bᴇʟᴏᴡ 👇\n🔮⇶ @movie_request_status </b>"
+            replyText = f"<b>👋 Hello {mentionUser} !\n\n Dᴇᴀʀ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ғᴏʀ {contentRequested} ʜᴀs ʙᴇᴇɴ sᴜʙᴍɪᴛᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴀᴅᴍɪɴs Sᴜᴄᴄᴇssғᴜʟʟʏ 🚀\n\nYᴏᴜ Cᴀɴ Sᴇᴇ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ Sᴛᴀᴛᴜs Bᴇʟᴏᴡ 👇\n🔮⇶ @request_status </b>"
 
             # Sending message for user in group
             await msg.reply_text(
@@ -353,7 +353,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                             button = InlineKeyboardButton("😟 Request Rejected 🚫", "rejected")
                         elif data == "done":
                             result = "COMPLETED"
-                            groupResult = "**ɪs Cᴏᴍᴘʟᴇᴛᴇᴅ Tʏᴘᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ ʜᴇʀᴇ ɪɴ ɢʀᴏᴜᴘ ᴡɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ ᴄʜᴇᴄᴋ ᴀᴅᴍɪɴ ʀᴇᴘʟʏ 😎 & ᴛʜᴀɴᴋ ᴛᴏ ᴀᴅᴍɪɴ 🥳"
+                            groupResult = "**ɪs Cᴏᴍᴘʟᴇᴛᴇᴅ Tʏᴘᴇ Cᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Nᴀᴍᴇ ʜᴇʀᴇ ɪɴ ɢʀᴏᴜᴘ ᴡɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ ᴄʜᴇᴄᴋ ᴀᴅᴍɪɴ ʀᴇᴘʟʏ 🥳"
                             button = InlineKeyboardButton("Request Completed ✅", "completed")
                         elif data == "unavailable":
                             result = "UNAVAILABLE"
